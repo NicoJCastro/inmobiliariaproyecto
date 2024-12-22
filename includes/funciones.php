@@ -18,7 +18,7 @@ function estaAutenticado()
 {
     session_start();
     if (!($_SESSION['login'])) {  // Redirigir solo si no está autenticado
-        header('Location: /bienesraices/index.php');
+        header('Location: /bienesraicesMVC/index');
     }
 }
 
