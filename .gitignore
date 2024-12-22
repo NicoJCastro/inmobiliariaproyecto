@@ -4,3 +4,4 @@ node_modules/
 *.log
 *.sql
 /public/imagenes/
+baseDatos.sql
