@@ -21,6 +21,7 @@ try {
         'MYSQL_HOST',
         'MYSQL_USERNAME',
         'MYSQL_PASSWORD',
+        'MYSQL_PORT',
         'MYSQL_DATABASE'
     ])->notEmpty();
     
