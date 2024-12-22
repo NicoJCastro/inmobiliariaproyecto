@@ -78,7 +78,7 @@ function validarORedireccionar(string $url){
     $id = $_GET['id'];
     $id = filter_var($id, FILTER_VALIDATE_INT); // Validamos que sea un entero
     if (!$id) {
-        header("Location: /bienesraicesMVC/public/{$url}");
+        header("Location: /bienesraicesMVC/public/${url}");
     }
 
     return $id;

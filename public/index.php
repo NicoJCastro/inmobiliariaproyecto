@@ -27,7 +27,7 @@ $router->get('/vendedores/actualizar', [VendedorControler::class, 'actualizar'])
 $router->post('/vendedores/actualizar', [VendedorControler::class, 'actualizar']);
 $router->post('/vendedores/eliminar', [VendedorControler::class, 'eliminar']);
 
-$router->get('/', [PaginasControler::class, 'index']);
+// $router->get('/', [PaginasControler::class, 'index']);
 
 $router->get('/index', [PaginasControler::class, 'index']);
 $router->get('/nosotros', [PaginasControler::class, 'nosotros']);
