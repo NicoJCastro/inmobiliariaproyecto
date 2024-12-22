@@ -149,7 +149,21 @@ NicoJCastro-inmobiliariaproyecto/
 - **views/**: Vistas de la aplicación.
 - **src/**: Archivos fuente de JavaScript y SCSS.
 
+## Exposición Pública con ngrok
+
+## Pasos para usar ngrok:
+
+1. **Inicia el servidor local**:
+   Si ya tienes Apache o PHP corriendo en tu máquina, asegúrate de que el proyecto esté accesible en `http://localhost`.
+
+2. **Ejecuta ngrok**:
+   Abre una terminal y ejecuta el siguiente comando para exponer tu servidor local:
+   
+   ```bash
+   ngrok http 80
+
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cualquier cambio que desees realizar.
+
 
