@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once __DIR__ . '/../includes/app.php';
 
 use MVC\Router;
@@ -8,6 +9,8 @@ use Controllers\VendedorControler;
 use Controllers\PropiedadControler;
 
 $router = new Router();
+
+
 
 // Rutas propiedades
 $router->get('/admin', [PropiedadControler::class, 'index']);
@@ -24,6 +27,7 @@ $router->get('/vendedores/actualizar', [VendedorControler::class, 'actualizar'])
 $router->post('/vendedores/actualizar', [VendedorControler::class, 'actualizar']);
 $router->post('/vendedores/eliminar', [VendedorControler::class, 'eliminar']);
 
+$router->get('/', [PaginasControler::class, 'index']);
 
 $router->get('/index', [PaginasControler::class, 'index']);
 $router->get('/nosotros', [PaginasControler::class, 'nosotros']);

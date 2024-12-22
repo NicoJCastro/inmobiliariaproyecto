@@ -171,7 +171,7 @@ class ActiveRecord {
 
     public static function find($id)
     {
-        $query = "SELECT * FROM " . static::$tabla . " WHERE id = ${id}";
+        $query = "SELECT * FROM " . static::$tabla . " WHERE id = {$id}";
         $resutlado = self::consultarSQL($query);
 
         return array_shift($resutlado); //Retorno el primer elemento del array
