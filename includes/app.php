@@ -19,10 +19,10 @@ try {
     // Requerir que las variables existan y no estén vacías
     $dotenv->required([
         'MYSQL_HOST',
+        'MYSQL_USERNAME',
         'MYSQL_PASSWORD',
-        'MYSQL_PORT',
-        'MYSQL_USERNAME',        
         'MYSQL_DATABASE',
+        'MYSQL_PORT'
 
     ])->notEmpty();
     
