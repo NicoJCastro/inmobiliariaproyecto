@@ -7,7 +7,7 @@ function conectarDb() : mysqli {
         $_ENV['MYSQL_USERNAME'],
         $_ENV['MYSQL_PASSWORD'],
         $_ENV['MYSQL_DATABASE'],
-        $_ENV['MYSQL_PORT']
+        (int) $_ENV['MYSQL_PORT']
 
     );
 
