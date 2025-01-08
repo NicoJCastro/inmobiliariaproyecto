@@ -1,4 +1,4 @@
-.env
+includes/.env
 vendor/
 node_modules/
 *.log

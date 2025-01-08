@@ -11,6 +11,8 @@ function conectarDb() : mysqli {
 
     );
 
+    $db->set_charset('utf8');
+
     if ($db->connect_error) {
         echo "Error no se pudo conectar: " . $db->connect_error;
         exit;

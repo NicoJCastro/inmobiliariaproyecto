@@ -1,12 +1,14 @@
 <?php
-
-//funciones-baseDedatos-clases
-require 'funciones.php';
-require 'config/database.php';
-require __DIR__ . '/../vendor/autoload.php';
-
 use Dotenv\Dotenv;
 use Model\ActiveRecord;
+require __DIR__ . '/../vendor/autoload.php';
+
+
+require 'funciones.php';
+require 'config/database.php';
+
+
+
 
 try {
     // Obtener la ruta correcta al archivo .env
@@ -14,7 +16,7 @@ try {
     
     // Crear instancia de Dotenv y cargar variables
     $dotenv = Dotenv::createImmutable($rootPath);
-    $dotenv->load();
+    $dotenv->safeload();
     
     // Requerir que las variables existan y no estén vacías
     $dotenv->required([
