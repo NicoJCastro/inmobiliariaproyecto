@@ -7,16 +7,15 @@ require __DIR__ . '/../vendor/autoload.php';
 require 'funciones.php';
 require 'config/database.php';
 
-
-
-
 try {
     // Obtener la ruta correcta al archivo .env
-    $rootPath = dirname(__DIR__);
+    $rootPath = __DIR__;
     
     // Crear instancia de Dotenv y cargar variables
     $dotenv = Dotenv::createImmutable($rootPath);
-    $dotenv->safeload();
+    
+
+    $dotenv->load();
     
     // Requerir que las variables existan y no estén vacías
     $dotenv->required([
